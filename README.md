@@ -12,12 +12,15 @@ I approached this dataset using the following steps:
 ## Results
 
 ### Data Preprocessing
-o	The target variable used for this model was the “IS_SUCCESFUL” column. 
+o	The target variable used for this model was the “IS_SUCCESFUL” column.
+
 o	The featured variables used for this model were all columns excluding the “IS_SUCCESFUL” column, and those of which were dropped. 
+
 o	Two variables were neither targets nor features; the “EIN” and “NAME” columns as they provide unnecessary input data. 
 
 ### Compiling, Training, and Evaluating the Model
 o	My original model contained a total of 2 hidden layers and an output layer; the first hidden layer contained 80 neurons and the second hidden layer contained 30 neurons. For the hidden layers I selected a “relu” activation function, and for the output layer I employed a “sigmoid” activation function. I chose these specific activation functions because they are the most optimal for this model. 
+
 o	The original model was not able to achieve the 75% accuracy target, rather the model maintained an accuracy level of approximately 72%. 
 
 ### Optimization 
