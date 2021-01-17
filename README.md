@@ -24,13 +24,13 @@ o	My original model contained a total of 2 hidden layers and an output layer; th
 o	The original model was not able to achieve the 75% accuracy target, rather the model maintained an accuracy level of approximately 72%. 
 
 ### Optimization 
-1.	The first step I took to optimize the model to achieve 75% accuracy was checking the input dataset. In doing so, I removed two additional columns “SPECIAL_CONSIDERATIONS” and “STATUS” from the data frame in order to see if it was possibly confusing the model and leading to performance issues. However, the performance metrics remained the same as our original model. 
+1. The first step I took to optimize the model to achieve 75% accuracy was checking the input dataset. In doing so, I removed two additional columns “SPECIAL_CONSIDERATIONS” and “STATUS” from the data frame in order to see if it was possibly confusing the model and leading to performance issues. However, the performance metrics remained the same as our original model. 
 ![optitmized_1:](./Resources/optimized_1.png)
 
-2.	In addition to the removal of the unnecessary columns, I doubled the number of neurons present in both the first and second layer. However, increasing the number of neurons within the hidden layers instead decreased the accuracy score, and could’ve led to overfitting. 
+2. In addition to the removal of the unnecessary columns, I doubled the number of neurons present in both the first and second layer. However, increasing the number of neurons within the hidden layers instead it led to a decrease in the accuracy score, and could’ve led to overfitting.  
 ![optitmized_1:](./Resources/optimized_2.png)
 
-3.	The last adjustment I made to the model was increasing the number of epochs from 30 to 100, I implemented this change whilst reverting back to the original number of neurons in the hidden layers. I also altered the activation functions in all layers from “relu” to “tanh”- to see if a change in the activation function would increase the accuracy. The result of this alteration was an increase in the accuracy score from the second attempt, but the first optimization still maintained the highest accuracy score. The performance metrics are shown below. 
+3. The last adjustment I made to the model was increasing the number of epochs from 30 to 100, I implemented this change whilst reverting back to the original number of neurons in the hidden layers. I also altered the activation functions in all layers from “relu” to “tanh”- to see if a change in the activation function would increase the accuracy. The result of this alteration was an increase in the accuracy score from the second attempt, but the first optimization still maintained the highest accuracy score. The performance metrics are shown below. 
 ![optitmized_1:](./Resources/optimized_3.png)
 
 
